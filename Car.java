@@ -60,7 +60,7 @@ public class Car implements CarRequirements {
             myTrain.printManifest();
     }
         //public Passenger[] getPassengers() {
-            // TODO Auto-generated method stub
+            
            // throw new UnsupportedOperationException("Unimplemented method 'getPassengers'");
         }
 

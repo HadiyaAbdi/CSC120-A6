@@ -5,7 +5,9 @@ public class Train implements TrainRequirements {
     private ArrayList<Car> cars;
 
     // constructer to start the train, the cars and the engine
-    public Train(FuelType f, double currentFuelLevel, double fuelCapacity, int nCars, int passengerCapacity){
+    public Train(FuelType fuelType, double currentFuelLevel, double fuelCapacity, int nCars, int passengerCapacity){
+        // assign fuel type
+        this.fuelType = fuelType;
         // starting the engine
         this.engine = new Engine(fuelType, currentFuelLevel, fuelCapacity);
         // starting the cars
@@ -39,6 +41,7 @@ public class Train implements TrainRequirements {
         return total;
     }  
 
+
     //returns the number of seats remaining in all of the cars
     @Override
     public int seatsRemaining(){
@@ -50,7 +53,7 @@ public class Train implements TrainRequirements {
     }
     //print the manifest of all passengers in the train
     @Override
-    public String printManifest(){
+    public void printManifest(){
         boolean isEmpty = true;
         System.out.println("Train manifest");
         //ArrayList<Passenger> all = new ArrayList<Passenger>();
@@ -73,10 +76,18 @@ public class Train implements TrainRequirements {
            // System.out.println("No passengers in the train");
         }
 
-    public Object getNumberOfCars() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getNumberOfCars'");
-    }
-    }
+        public int getNumberOfCars() {
+            return this.cars.size();
+
+        
+    }}
+
+    //public Object getNumberOfCars() {
+
+       //throw new UnsupportedOperationException("Unimplemented method 'getNumberOfCars'");
+    
+
+
+    
 
     
