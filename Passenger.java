@@ -5,7 +5,7 @@ public class Passenger implements PassengerRequirements {
     public Passenger(String name) {
         this.name = name;
     }
-    // add passenger to the car
+    // add passenger to the car 
     @Override
     public void boardCar(Car c){
         if(c.addPassenger(this)){

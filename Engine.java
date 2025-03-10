@@ -35,10 +35,10 @@ public void refuel(){
 }
 //System.out.println("Remaining fuel:" + this.currentFuelLevel);
 
-public Boolean go(){
+public boolean go(){
     if(this.currentFuelLevel > 0){
         this.currentFuelLevel -= 1; // each go reduces the fuel level by 1 unit
-        return true; // return true if there is fuell still left
+        return true; // return true if there is fuel still left
     } else {
         return false;
 

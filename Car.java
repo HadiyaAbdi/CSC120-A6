@@ -9,6 +9,7 @@ public class Car implements CarRequirements {
         this.capacity = capacity;
         this.passengers = new ArrayList<Passenger>();
     }
+    
     // Get the capacity of the car
     public int getCapacity(){
         return this.capacity;

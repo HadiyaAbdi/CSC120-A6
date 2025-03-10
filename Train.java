@@ -20,7 +20,8 @@ public class Train implements TrainRequirements {
         for(int i = 0; i < nCars; i++){
             this.cars.add(new Car(passengerCapacity));
         }
-    }
+    } 
+    
     
     // Accessor methods
     @Override

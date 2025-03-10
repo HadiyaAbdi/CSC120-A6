@@ -55,7 +55,7 @@ public class TrainTest {
         assertEquals("Seats remaining decreased by 1 ", 1, c.seatsRemaining());
       
         //fail();
-    }
+    } 
 
     @Test
     public void testCarRemovePassenger() {
